@@ -1,11 +1,14 @@
 /* КР №3: Mobile First. Подключается после style.css из КР №1. */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 [hidden] {
   display: none !important;
 }
-img, video {
+img,
+video {
   max-width: 100%;
   height: auto;
 }
@@ -16,7 +19,9 @@ picture {
 main {
   padding: 24px 16px;
 }
-main > *, .catalog-layout > *, .product-details > * {
+main > *,
+.catalog-layout > *,
+.product-details > * {
   min-width: 0;
 }
 h1 {
@@ -25,13 +30,22 @@ h1 {
 h2 {
   font-size: clamp(23px, 3vw, 30px);
 }
-p, h1, h2, h3, a, th, td {
+p,
+h1,
+h2,
+h3,
+a,
+th,
+td {
   overflow-wrap: anywhere;
 }
 section[id] {
   scroll-margin-top: 24px;
 }
-.button, .menu-toggle, .dialog-close, summary {
+.button,
+.menu-toggle,
+.dialog-close,
+summary {
   min-height: 44px;
 }
 .button {
@@ -147,7 +161,7 @@ section[id] {
 /* Фильтры над каталогом; details доступен без JS. */
 .catalog-layout {
   grid-template-columns: minmax(0, 1fr);
-  grid-template-areas: 'filters' 'products';
+  grid-template-areas: "filters" "products";
 }
 .catalog-filters {
   padding: 20px;
@@ -167,7 +181,8 @@ section[id] {
 .catalog-filters__input {
   min-height: 44px;
 }
-.catalog-filters__checkbox, .order-form__checkbox {
+.catalog-filters__checkbox,
+.order-form__checkbox {
   width: 20px;
   height: 20px;
   vertical-align: middle;
@@ -190,7 +205,8 @@ section[id] {
 .table-wrapper {
   width: 100%;
 }
-.product-table, .product-table tbody {
+.product-table,
+.product-table tbody {
   display: block;
 }
 .product-table caption {
@@ -213,7 +229,8 @@ section[id] {
   border-radius: 10px;
   overflow: hidden;
 }
-.product-table tbody th, .product-table tbody td {
+.product-table tbody th,
+.product-table tbody td {
   display: block;
   padding: 10px 16px;
   border: 0;
@@ -236,7 +253,9 @@ section[id] {
   min-width: 0;
   margin: 0;
 }
-.order-form__input, .order-form__select, .order-form__textarea {
+.order-form__input,
+.order-form__select,
+.order-form__textarea {
   min-width: 0;
   min-height: 44px;
   font-size: 16px;
@@ -251,7 +270,9 @@ section[id] {
 .order-form__actions .button {
   flex: 1 1 180px;
 }
-.order-form__field--wide, .order-form__actions, .form-note {
+.order-form__field--wide,
+.order-form__actions,
+.form-note {
   grid-column: 1 / -1;
 }
 .form-note {
@@ -320,7 +341,8 @@ body:has(dialog[open]) {
   .product-table tbody tr {
     display: table-row;
   }
-  .product-table tbody th, .product-table tbody td {
+  .product-table tbody th,
+  .product-table tbody td {
     display: table-cell;
     border: 1px solid var(--color-border);
     padding: 16px;
@@ -368,7 +390,7 @@ body:has(dialog[open]) {
   }
   .catalog-layout {
     grid-template-columns: 250px minmax(0, 1fr);
-    grid-template-areas: 'filters products';
+    grid-template-areas: "filters products";
   }
   .catalog-filters {
     position: sticky;

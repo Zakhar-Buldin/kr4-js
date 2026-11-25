@@ -1,15 +1,75 @@
 /* Дополнения КР4: сохраняем стиль Аккорда. */
-.controls {display:flex;flex-wrap:wrap;gap:16px;padding:20px;background:white;border:1px solid var(--color-border);border-radius:10px;align-items:end;}
-.controls label {display:grid;gap:6px;flex:1 1 180px;}
-.controls input,.controls select,.cart-row input {font:inherit;min-height:44px;padding:8px;max-width:100%;min-width:0;}
-.controls label:has([type=checkbox]) {display:flex;align-items:center;}
-.card-actions {display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;}
-.card-actions .button {flex:1 1 130px;}
-.cart-row {padding:20px;background:white;border:1px solid var(--color-border);border-radius:10px;margin-bottom:16px;}
-.cart-row input {width:85px;}
-.field-error {color:#b00020;margin:4px 0;}
-.notice {position:sticky;bottom:0;background:#272039;color:white;margin:0;padding:12px 24px;z-index:3;}
-.notice:empty {display:none;}
-.badge {color:#593a86;font-weight:bold;}
-#product-view {max-width:650px;margin:auto;}
-#catalog {margin-top:24px;}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px;
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  align-items: end;
+}
+.controls label {
+  display: grid;
+  gap: 6px;
+  flex: 1 1 180px;
+}
+.controls input,
+.controls select,
+.cart-row input {
+  font: inherit;
+  min-height: 44px;
+  padding: 8px;
+  max-width: 100%;
+  min-width: 0;
+}
+.controls label:has([type="checkbox"]) {
+  display: flex;
+  align-items: center;
+}
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+.card-actions .button {
+  flex: 1 1 130px;
+}
+.cart-row {
+  padding: 20px;
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+.cart-row input {
+  width: 85px;
+}
+.field-error {
+  color: #b00020;
+  margin: 4px 0;
+}
+.notice {
+  position: sticky;
+  bottom: 0;
+  background: #272039;
+  color: white;
+  margin: 0;
+  padding: 12px 24px;
+  z-index: 3;
+}
+.notice:empty {
+  display: none;
+}
+.badge {
+  color: #593a86;
+  font-weight: bold;
+}
+#product-view {
+  max-width: 650px;
+  margin: auto;
+}
+#catalog {
+  margin-top: 24px;
+}

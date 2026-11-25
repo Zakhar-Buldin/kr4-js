@@ -1,93 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <!-- Cтрока нужна для правильного отображения страницы на телефонах и планшетах -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Музыкальная школа Аккорд — занятия музыкой для детей и взрослых.">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Cтрока нужна для правильного отображения страницы на телефонах и планшетах -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Музыкальная школа Аккорд — занятия музыкой для детей и взрослых."
+    />
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Музыкальная школа Аккорд">
-  <meta property="og:description" content="Занятия вокалом, гитарой и фортепиано для детей и взрослых.">
-  <meta property="og:image" content="https://zakhar-buldin.github.io/kr4-js-shop/images/guitar.jpg">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Музыкальная школа Аккорд" />
+    <meta
+      property="og:description"
+      content="Занятия вокалом, гитарой и фортепиано для детей и взрослых."
+    />
+    <meta
+      property="og:image"
+      content="https://zakhar-buldin.github.io/kr4-js-shop/images/guitar.jpg"
+    />
 
-  <title>Описание занятия — Аккорд</title>
+    <title>Описание занятия — Аккорд</title>
 
-  <!-- Подключение стилей -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
-    rel="stylesheet"
-  >
+    <!-- Подключение стилей -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
-  <!-- Подключение JavaScript-файла -->
-  <!-- defer позволяет не блокировать разбор HTML и гарантирует выполнение скрипта после построения документа-->
-  <script src="js/data.js" defer></script>
-<script src="js/cart.js" defer></script>
-<script src="js/modal.js" defer></script>
-<script src="js/catalog.js" defer></script>
-<script src="js/validation.js" defer></script>
-<script src="js/main.js" defer></script>
-  
-<link rel="stylesheet" href="css/shop.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Перейти к содержимому</a>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="site-header__logo" href="index.html">Аккорд</a>
+    <!-- Подключение JavaScript-файла -->
+    <!-- defer позволяет не блокировать разбор HTML и гарантирует выполнение скрипта после построения документа-->
+    <script src="js/data.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/catalog.js" defer></script>
+    <script src="js/validation.js" defer></script>
+    <script src="js/main.js" defer></script>
 
-      <!-- Блок навигации, в котором находятся основные ссылки по сайту или странице -->
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Меню</button>
-      <nav id="main-nav" class="site-nav" aria-label="Основная навигация">
-        <ul class="site-nav__list">
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html">
-              Главная
-            </a>
-          </li>
+    <link rel="stylesheet" href="css/shop.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-header__logo" href="index.html">Аккорд</a>
 
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="catalog.html">
-              Направления
-            </a>
-          </li>
+        <!-- Блок навигации, в котором находятся основные ссылки по сайту или странице -->
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          hidden
+        >
+          Меню
+        </button>
+        <nav id="main-nav" class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html"> Главная </a>
+            </li>
 
-          <li class="site-nav__item">
-            <a class="site-nav__link site-nav__link--active" aria-current="page" href="product.html">
-              О курсе
-            </a>
-          </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html"> Направления </a>
+            </li>
 
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="order.html">
-              Запись
-            </a>
-          </li>
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--active"
+                aria-current="page"
+                href="product.html"
+              >
+                О курсе
+              </a>
+            </li>
 
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="contacts.html">
-              Контакты
-            </a>
-          </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="order.html"> Запись </a>
+            </li>
 
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html#advantages">
-              Преимущества
-            </a>
-          </li>
-        <li><a class="site-nav__link" href="cart.html">Корзина (<span data-cart-count>0</span>)</a></li></ul>
-      </nav>
-    </div>
-  </header>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html"> Контакты </a>
+            </li>
 
-  <main id="main" tabindex="-1"><noscript><p>Для каталога, корзины и форм включите JavaScript в браузере.</p></noscript><section class="section"><h1>Описание занятия</h1><div id="product-view"></div></section></main><footer class="site-footer" id="contacts">
-    <!-- &copy - HTML-сущность символа авторского права -->
-    <p>&copy; 2026 Музыкальная школа «Аккорд».</p>
-    <p>Учебный проект по дисциплине «Фронтенд и бэкенд разработка».</p>
-  </footer><p id="notice" class="notice" role="status"></p>
-<dialog id="course-dialog" class="order-dialog" aria-labelledby="dialog-title"><button type="button" id="dialog-close" class="button button--secondary">Закрыть</button><h2 id="dialog-title"></h2><p id="dialog-description"></p><p id="dialog-price"></p><button type="button" id="dialog-add" class="button button--primary">В корзину</button></dialog></body></html>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html#advantages">
+                Преимущества
+              </a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="cart.html"
+                >Корзина (<span data-cart-count>0</span>)</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <noscript
+        ><p>
+          Для каталога, корзины и форм включите JavaScript в браузере.
+        </p></noscript
+      >
+      <section class="section">
+        <h1>Описание занятия</h1>
+        <div id="product-view"></div>
+      </section>
+    </main>
+    <footer class="site-footer" id="contacts">
+      <!-- &copy - HTML-сущность символа авторского права -->
+      <p>&copy; 2026 Музыкальная школа «Аккорд».</p>
+      <p>Учебный проект по дисциплине «Фронтенд и бэкенд разработка».</p>
+    </footer>
+    <p id="notice" class="notice" role="status"></p>
+    <dialog
+      id="course-dialog"
+      class="order-dialog"
+      aria-labelledby="dialog-title"
+    >
+      <button type="button" id="dialog-close" class="button button--secondary">
+        Закрыть
+      </button>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+      <p id="dialog-price"></p>
+      <button type="button" id="dialog-add" class="button button--primary">
+        В корзину
+      </button>
+    </dialog>
+  </body>
+</html>
