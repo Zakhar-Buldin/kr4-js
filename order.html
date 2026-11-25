@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <!-- Cтрока нужна для правильного отображения страницы на телефонах и планшетах -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Музыкальная школа Аккорд — занятия музыкой для детей и взрослых.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Музыкальная школа Аккорд">
+  <meta property="og:description" content="Занятия вокалом, гитарой и фортепиано для детей и взрослых.">
+  <meta property="og:image" content="https://zakhar-buldin.github.io/kr4-js-shop/images/guitar.jpg">
+
+  <title>Оформление заявки — Аккорд</title>
+
+  <!-- Подключение стилей -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Подключение JavaScript-файла -->
+  <!-- defer позволяет не блокировать разбор HTML и гарантирует выполнение скрипта после построения документа-->
+  <script src="js/data.js" defer></script>
+<script src="js/cart.js" defer></script>
+<script src="js/modal.js" defer></script>
+<script src="js/catalog.js" defer></script>
+<script src="js/validation.js" defer></script>
+<script src="js/main.js" defer></script>
+  
+<link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">Аккорд</a>
+
+      <!-- Блок навигации, в котором находятся основные ссылки по сайту или странице -->
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Меню</button>
+      <nav id="main-nav" class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html">
+              Главная
+            </a>
+          </li>
+
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">
+              Направления
+            </a>
+          </li>
+
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="product.html">
+              О курсе
+            </a>
+          </li>
+
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" aria-current="page" href="order.html">
+              Запись
+            </a>
+          </li>
+
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">
+              Контакты
+            </a>
+          </li>
+
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#advantages">
+              Преимущества
+            </a>
+          </li>
+        <li><a class="site-nav__link" href="cart.html">Корзина (<span data-cart-count>0</span>)</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1"><noscript><p>Для каталога, корзины и форм включите JavaScript в браузере.</p></noscript><section class="section"><h1>Оформление заявки</h1><div id="order-summary" class="aside-info"></div><form id="request-form" class="order-form order-form--page" novalidate><p class="form-note">Учебная заявка: данные никуда не отправляются. Все поля обязательны.</p><div class="order-form__field"><label for="name" class="order-form__label">Имя</label><input class="order-form__input" id="name" name="name" type="text" autocomplete="name" aria-describedby="name-error" required><p id="name-error" class="field-error"></p></div><div class="order-form__field"><label for="email" class="order-form__label">E-mail</label><input class="order-form__input" id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error" required><p id="email-error" class="field-error"></p></div><div class="order-form__field"><label for="phone" class="order-form__label">Телефон</label><input class="order-form__input" id="phone" name="phone" type="tel" autocomplete="tel" aria-describedby="phone-error" required><p id="phone-error" class="field-error"></p></div><div class="order-form__field order-form__field--wide"><label><input id="agreement" type="checkbox" aria-describedby="agreement-error" required> Согласен на обработку данных</label><p id="agreement-error" class="field-error"></p></div><div class="order-form__actions"><button id="submit-request" class="button button--primary">Подготовить заявку</button></div><p id="form-status" class="form-note" role="status" tabindex="-1"></p></form></section></main><footer class="site-footer" id="contacts">
+    <!-- &copy - HTML-сущность символа авторского права -->
+    <p>&copy; 2026 Музыкальная школа «Аккорд».</p>
+    <p>Учебный проект по дисциплине «Фронтенд и бэкенд разработка».</p>
+  </footer><p id="notice" class="notice" role="status"></p>
+<dialog id="course-dialog" class="order-dialog" aria-labelledby="dialog-title"><button type="button" id="dialog-close" class="button button--secondary">Закрыть</button><h2 id="dialog-title"></h2><p id="dialog-description"></p><p id="dialog-price"></p><button type="button" id="dialog-add" class="button button--primary">В корзину</button></dialog></body></html>
